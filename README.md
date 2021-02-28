@@ -43,4 +43,13 @@ polyFeat= PolynomialFeatures(degree=2)
 x=polyFeat.fit_transform(x)
 print(x)
 
+polyFeat= PolynomialFeatures(degree=) 
+x=polyFeat.fit_transform(x) 
+print(x)
+
+print('-'*20);print('TRAINING DATA');print('-'*20)
+model=linear_model.LinearRegression()
+model.fit(x,y)
+accuracy=model.score(x,y)
+print(f'Accuracy:{(accuracy)}')
 
